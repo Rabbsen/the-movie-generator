@@ -19,9 +19,9 @@ function getMatch(mood, genre) {
     if (mood === "Happy" && genre === "Comedy")
         return "avengers";
     if (mood === "Sad" && genre === "Romantic")
-        return "batman";
+        return "Romance";
     if (mood === "Happy" && genre === "Romantic")
-        return "cozy romance";
+        return "romance";
 
     return genre;
 }
@@ -68,13 +68,13 @@ findMovie.addEventListener("click", async () => {
 // Displaying recomended movie on the Div
         movieDisplay.innerHTML = `
         <h2>${detailsData.Title} (${detailsData.Year})</h2>
-        <p>Genre:${detailsData.Genre}</p>
-        <p>Plot:${detailsData.Plot}</p>
-        <p>Rating:${detailsData.imdbRating}<p>
+        <p>${detailsData.Genre}</p>
+        <p>${detailsData.Plot}</p>
+        <p>${detailsData.imdbRating}<p>
         
         ${detailsData.Poster && detailsData.Poster !== "N/A" ? 
             `<img src="${detailsData.Poster}" alt="Poster for ${detailsData.Title}"
-            style="max-width:600px;">`
+            style="max-width:400px;" style="max-heigth:400px;">`
                 : ""
         }`;
     } catch (error) {
