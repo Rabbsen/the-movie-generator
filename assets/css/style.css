@@ -1,10 +1,27 @@
+/* google Fonts */
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 body {
-    background-color: black;
+    background-image: url('../images/popcorn3.jpg');
+    font-family: "Bebas Neue", sans-serif;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    height:100%;
+    text-shadow: 2px 5px 5px black;
+
 }
 
 .header {
-    color:slategray;
+    color:whitesmoke;
+    height:100px;
+    font-size:100px;
+    padding:50px;
 }
 
 .divbox {
@@ -19,20 +36,41 @@ body {
 .buttonbox {
     display:flex;
     justify-content: center;
-    flex-direction:column;
-    align-items:center;
+    flex-direction:row;
 }
 
 .diverino {
-    width:600px;
-    height:600px;
-    background-color: slategrey;
+    width:100%;
+    max-width:600px;
+    min-height:300px;
     justify-content:center;
     align-items:center;
 }
 
+#movieDisplay {
+    max-width:600px;
+    width:100%;
+    max-height:600px;
+    justify-content:center;
+    align-items:center;
+    padding:15px;
+    color:whitesmoke;
+    letter-spacing: 1.5px;
+}
+#movieDisplay p {
+    font-size:larger;
+}
+
 .buttonbox > .btn {
     margin:0.5em;
+    background-color:whitesmoke;
+    color:black;
+    border-color:black;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    background-color:grey;
 }
 
 /* styling regarding the Options section */
@@ -46,13 +84,13 @@ body {
     display: flex;
     width:150px;
     height:25px;
+    margin-left:50px;
 }
 .optdiv {
     display:flex;
     flex-direction:row;
     justify-content: center;
-    padding:25px;
-    justify-content: space-evenly;
+    padding:50px;
 }
 
 /* --------------------------------------------- */

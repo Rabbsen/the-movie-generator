@@ -10,8 +10,10 @@ const genreSelect =
 document.getElementById("genre");
 const findMovie =
 document.getElementById("findMovie");
-const movieDispaly =
+const movieDisplay =
 document.getElementById("movieDisplay");
+const randomMovie =
+document.getElementById("randomMovie");
 
 //Matching mood+genre
 
@@ -22,6 +24,9 @@ function getMatch(mood, genre) {
         return "Romance";
     if (mood === "Happy" && genre === "Romantic")
         return "romance";
+    if (mood === "" && genre === "")
+        return "random";
+
 
     return genre;
 }
@@ -74,7 +79,7 @@ findMovie.addEventListener("click", async () => {
         
         ${detailsData.Poster && detailsData.Poster !== "N/A" ? 
             `<img src="${detailsData.Poster}" alt="Poster for ${detailsData.Title}"
-            style="max-width:400px;" style="max-heigth:400px;">`
+            style="max-width:400px;max-height:300px;object-fit:contain;">`
                 : ""
         }`;
     } catch (error) {

@@ -11,10 +11,14 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <!-- link for styling -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- Header -->
-        <h1 class="text-center p-4">The Movie Picker</h1>
+        <h1 class="text-center p-4 header">The Movie Picker</h1>
         <!-- Movie area -->
         <section class="section">
             <div class="optdiv container">
@@ -26,19 +30,19 @@
                 </select>
                 <select class="select2" id="genre">
                     <option value="">Pick your Genre!</option>
-                    <option value="Sci-fi">Science Fiction</option>
-                    <option value="horror">Horror</option>
+                    <option value="Romantic">Romance</option>
+                    <option value="Comedy">Comedy</option>
                 </select>
             </div>
-            <div class="divbox container" id="movieDisplay">
+            <div class="divbox container">
                 <div class="text-center diverino">
-                 
+                    <div id="movieDisplay">
+
+                    </div>
                 </div>
-                
             </div>
             <div class="buttonbox m-4">
                 <button type="button" class="btn btn-primary" id="findMovie">Find My Movie!</button>
-                <button type="button" class="btn btn-primary" id="clearMovie">Clear Movie!</button>
                 <button type="button" class="btn btn-primary" id="randomMovie">Randomize My Movie!</button>
             </div>
         </section>
