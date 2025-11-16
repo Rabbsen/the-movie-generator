@@ -54,9 +54,10 @@ findMovie.addEventListener("click", async () => {
 
     const keyword = getMatch(chosenMood,chosenGenre);
 
+
     try {
         const searchUrl = 
-        `http://www.omdbapi.com/?apikey=${OMDB_KEY}&s=${encodeURIComponent(keyword)}&type=movie`;
+        `https://www.omdbapi.com/?apikey=${OMDB_KEY}&s=${encodeURIComponent(keyword)}&type=movie`;
 
         const Response = await fetch(searchUrl);
         const data = await Response.json();
@@ -71,7 +72,7 @@ findMovie.addEventListener("click", async () => {
         const randomIndex = Math.floor(Math.random() * movies.length);
         const randomMovie = movies[randomIndex];
         
-        const detailsUrl = `http://www.omdbapi.com/?apikey=${OMDB_KEY}&i=${randomMovie.imdbID}&plot=short`;
+        const detailsUrl = `https://www.omdbapi.com/?apikey=${OMDB_KEY}&i=${randomMovie.imdbID}&plot=short`;
             const detailsResponse = await
             fetch(detailsUrl);
             const detailsData = await
@@ -101,7 +102,7 @@ randomMovie.addEventListener("click", async () => {
 
     try {
         const searchUrl = 
-        `http://www.omdbapi.com/?apikey=${OMDB_KEY}&s=${encodeURIComponent(keyword)}&type=movie`;
+        `https://www.omdbapi.com/?apikey=${OMDB_KEY}&s=${encodeURIComponent(keyword)}&type=movie`;
 
         const Response = await fetch(searchUrl);
         const data = await Response.json();
@@ -115,7 +116,7 @@ randomMovie.addEventListener("click", async () => {
         const randomIndex = Math.floor(Math.random() * movies.length);
         const randomMovie = movies[randomIndex];
         
-        const detailsUrl = `http://www.omdbapi.com/?apikey=${OMDB_KEY}&i=${randomMovie.imdbID}&plot=short`;
+        const detailsUrl = `https://www.omdbapi.com/?apikey=${OMDB_KEY}&i=${randomMovie.imdbID}&plot=short`;
             const detailsResponse = await
             fetch(detailsUrl);
             const detailsData = await
