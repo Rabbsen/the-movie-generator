@@ -18,10 +18,10 @@
     </head>
     <body>
         <!-- Header -->
-        <h1 class="text-center p-4 header">The Movie Picker</h1>
+        <h1 class="text-center p-4 header container">The Movie Picker</h1>
         <!-- Movie area -->
-        <section class="section">
-            <div class="optdiv container">
+        <div class="section">
+            <div class="optdiv">
                 <select class="select" id="mood">
                     <option value="">Pick your mood!</option>
                     <option value="Happy">Happy!</option>
@@ -34,18 +34,16 @@
                     <option value="Comedy">Comedy</option>
                 </select>
             </div>
-            <div class="divbox container">
-                <div class="text-center diverino">
-                    <div id="movieDisplay">
+            <div class="divbox">
+                <div id="movieDisplay">
 
-                    </div>
-                </div>
+                </div> 
             </div>
             <div class="buttonbox m-4">
                 <button type="button" class="btn btn-primary" id="findMovie">Find My Movie!</button>
                 <button type="button" class="btn btn-primary" id="randomMovie">Randomize My Movie!</button>
             </div>
-        </section>
+        </div>
         
 
         <script src="assets/js/script.js" defer></script>
