@@ -70,7 +70,7 @@ findMovie.addEventListener("click", async () => {
             fetch(detailsUrl);
             const detailsData = await
             detailsResponse.json();
-// Displaying recomended movie on the Div
+        // Displaying recomended movie on the Div
         movieDisplay.innerHTML = `
         <h2>${detailsData.Title} (${detailsData.Year})</h2>
         <p>${detailsData.Genre}</p>
@@ -78,8 +78,7 @@ findMovie.addEventListener("click", async () => {
         <p>${detailsData.imdbRating}<p>
         
         ${detailsData.Poster && detailsData.Poster !== "N/A" ? 
-            `<img src="${detailsData.Poster}" alt="Poster for ${detailsData.Title}"
-            style="max-width:400px;max-height:300px;object-fit:contain;">`
+            `<img class="poster" src="${detailsData.Poster}" alt="Poster for ${detailsData.Title}">`
                 : ""
         }`;
     } catch (error) {
