@@ -19,17 +19,17 @@ document.getElementById("randomMovie");
 
 function getMatch(mood, genre) {
     if (mood === "Happy" && genre === "Comedy")
-        return "avengers";
+        return "Comedy";
     if (mood === "Sad" && genre === "Romantic")
         return "Romance";
     if (mood === "Happy" && genre === "Romantic")
-        return "romance";
-    if (mood === "" && genre === "")
-        return "";
-    if (mood === "" && genre === "")
-        return "";
-    if (mood === "" && genre === "")
-        return "";
+        return "Romance";
+    if (mood === "Happy" && genre === "Action")
+        return "Action";
+    if (mood === "Sad" && genre === "Horror")
+        return "Horror";
+    if (mood === "Happy" && genre === "Sci-fi")
+        return "Sci-fi";
     if (mood === "" && genre === "")
         return "";
     if (mood === "" && genre === "")
