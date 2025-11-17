@@ -29,19 +29,19 @@ function getMatch(mood, genre) {
     if (mood === "Sad" && genre === "Horror")
         return "Horror";
     if (mood === "Happy" && genre === "Sci-fi")
-        return "Sci-fi";
-    if (mood === "" && genre === "")
-        return "";
-    if (mood === "" && genre === "")
-        return "";
-    if (mood === "" && genre === "")
-        return "";
-    if (mood === "" && genre === "")
-        return "";
-    if (mood === "" && genre === "")
-        return "";
-    if (mood === "" && genre === "")
-        return "";
+        return "Science fiction";
+    if (mood === "Happy" && genre === "Animation")
+        return "family animation";
+    if (mood === "Silly" && genre === "Drama")
+        return "comedy drama";
+    if (mood === "Energetic" && genre === "Action")
+        return "energetic action";
+    if (mood === "Angry" && genre === "Fantasy")
+        return "Anime";
+    if (mood === "Cozy" && genre === "Drama")
+        return "mysterious";
+    if (mood === "batman" && genre === "batman")
+        return "Batman";
 
 
     return genre;
